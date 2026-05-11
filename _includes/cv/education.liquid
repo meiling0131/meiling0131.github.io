@@ -18,10 +18,23 @@
           {% endcapture %}
 
           {% if start_date != '' %}
-            {% comment %} Extract year only from dates like "1933-01-01" or just use "1933" as is {% endcomment %}
-            {% assign startDate = start_date | split: '-' | first %}
-            {% assign endDate = end_date | split: '-' | first | default: 'Present' %}
-            {% assign date = startDate | append: ' - ' | append: endDate %}
+            {% assign start_parts = start_date | split: '-' %}
+            {% assign start_year = start_parts[0] | strip %}
+            {% assign start_month = start_parts[1] | strip %}
+            {% capture start_display %}{{ start_year }}{% if start_month != '' %}.{{ start_month | plus: 0 }}{% endif %}{% endcapture %}
+
+            {% if end_date != '' %}
+              {% assign end_parts = end_date | split: '-' %}
+              {% assign end_year = end_parts[0] | strip %}
+              {% assign end_month = end_parts[1] | strip %}
+              {% capture end_display %}{{ end_year }}{% if end_month != '' %}.{{ end_month | plus: 0 }}{% endif %}{% endcapture %}
+            {% else %}
+              {% assign end_display = 'present' %}
+            {% endif %}
+
+            {% assign date = start_display | append: ' - ' | append: end_display %}
+          {% elsif entry.date_label %}
+            {% assign date = entry.date_label %}
           {% else %}
             {% assign date = null %}
           {% endif %}
@@ -31,7 +44,7 @@
               <tr>
                 <td>
                   {% if date %}
-                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">{{ date }}</span>
+                    <span class="badge font-weight-bold danger-color-dark align-middle" style="min-width: 130px">{{ date }}</span>
                   {% endif %}
                 </td>
               </tr>
@@ -56,16 +69,18 @@
             {% if entry.studyType %}{{ entry.studyType }}{% elsif entry.degree %}{{ entry.degree }}{% endif %}
           {% endcapture %}
 
-          {% if entry.url %}
-            <h6 class="title font-weight-bold ml-1 ml-md-4">
-              <a href="{{ entry.url }}">{{ study_type }}</a>
-            </h6>
-          {% elsif study_type != '' %}
+          {% if study_type != '' %}
             <h6 class="title font-weight-bold ml-1 ml-md-4">{{ study_type }}</h6>
           {% endif %}
 
           {% if entry.institution %}
-            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.institution }}</h6>
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+              {% if entry.url %}
+                <a href="{{ entry.url }}">{{ entry.institution }}</a>
+              {% else %}
+                {{ entry.institution }}
+              {% endif %}
+            </h6>
           {% endif %}
 
           {% if entry.area %}
