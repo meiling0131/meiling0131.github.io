@@ -34,9 +34,9 @@ cv:
 
       - institution: East China University of Science and Technology
         location: ""
-        area: Robotics Engineering
-        studyType: Attended
-        date_label: attended
+        area: ""
+        studyType: B.S. Robotics Engineering
+        date_label: Attended
         start_date: ""
         end_date: ""
         score: ""
@@ -61,9 +61,10 @@ cv:
         summary: ""
         highlights: []
 
-      - company: "Claude Builder Club @ Purdue ([Anthropic](https://www.anthropic.com))"
+      - company: Claude Builder Club @ Purdue
         position: Member
         location: ""
+        url: https://www.linkedin.com/company/claude-builder-club-purdue
         start_date: 2025-08
         end_date: ""
         summary: "AI Developer Tooling with Claude."
