@@ -21,7 +21,9 @@
               <tr>
                 <td>
                   <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 130px">
-                    {%- if start_date != '' -%}
+                    {%- if entry.date_label -%}
+                      {{- entry.date_label -}}
+                    {%- elsif start_date != '' -%}
                       {{- start_date | split: '-' | slice: 0, 1 | join: '' -}}
                     {%- else -%}
                       {%- comment -%}
