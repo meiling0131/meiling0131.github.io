@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-teaching",
+          title: "teaching",
+          description: "Courses I have supported as a teaching assistant at Purdue.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
+          },
         },{id: "nav-cv",
           title: "CV",
           description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
@@ -23,10 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-started-undergraduate-research-on-ml-systems-at-purdue-ece",
-          title: 'Started undergraduate research on ML systems at Purdue ECE.',
+        },{id: "news-started-undergraduate-research-on-ml-systems-at-purdue",
+          title: 'Started undergraduate research on ML systems at Purdue.',
           description: "",
-          section: "News",},{
+          section: "News",},{id: "news-serving-as-a-teaching-assistant-for-ece-57000-artificial-intelligence-a-graduate-level-course-at-purdue-in-fall-2026",
+          title: 'Serving as a Teaching Assistant for ECE 57000: Artificial Intelligence, a graduate-level course...',
+          description: "",
+          section: "News",},{id: "teachings-ece-57000-artificial-intelligence",
+          title: 'ECE 57000: Artificial Intelligence',
+          description: "Graduate-level introduction to artificial intelligence at Purdue. I serve as a Teaching Assistant for the Fall 2026 offering.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/ece57000-artificial-intelligence.html";
+            },},{
         id: 'social-cv',
         title: 'CV',
         section: 'Socials',
