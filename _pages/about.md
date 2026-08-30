@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Undergraduate at <a href='https://engineering.purdue.edu/ECE'>Purdue ECE</a> · ML Systems & LLM Inference
+subtitle: Undergraduate at <a href='https://www.cs.purdue.edu'>Purdue CS</a> · ML Systems & LLM Inference
 profile:
   align: right
   image: prof_pic.jpg
@@ -21,12 +21,14 @@ news:
   scrollable: true
   limit: 5
 ---
-Hi! I'm Meiling, an undergraduate at [Purdue University](https://www.purdue.edu) majoring in Computer Engineering, expected to graduate in **December 2027**.
+Hi! I'm Meiling, an undergraduate at [Purdue University](https://www.purdue.edu) majoring in Computer Science, expected to graduate in **December 2027**.
 
 My research goal is to build **efficient and interpretable machine learning systems**. I'm broadly interested in:
 
 - **Machine Learning Systems**
 - **Model Interpretability**
+
+I'm currently a Teaching Assistant for **ECE 57000: Artificial Intelligence**, a graduate-level course at Purdue — see my [teaching](/teaching/) page.
 
 I'm part of the Claude Builder Club at Purdue.
 

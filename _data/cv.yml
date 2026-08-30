@@ -25,7 +25,7 @@ cv:
         location: West Lafayette, IN
         url: https://www.purdue.edu
         area: ""
-        studyType: B.S. Computer Engineering
+        studyType: B.S. Computer Science
         start_date: 2025-08
         end_date: ""
         score: "GPA: 4.0 / 4.0 · Dean's List & Semester Honors"
@@ -44,6 +44,15 @@ cv:
         highlights: []
 
     Experience:
+      - company: Purdue University, School of ECE
+        position: "Teaching Assistant — ECE 57000: Artificial Intelligence (graduate-level)"
+        location: West Lafayette, IN
+        url: https://www.davidinouye.com/course/ece57000-fall-2026/
+        start_date: 2026-08
+        end_date: ""
+        summary: "Graduate-level AI course taught by Prof. David I. Inouye."
+        highlights: []
+
       - company: EcoAI Lab
         position: Research Assistant
         location: ""
