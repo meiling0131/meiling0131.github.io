@@ -44,8 +44,7 @@ cv:
         start_date: 2026-05
         end_date: ""
         summary: "Advisor: Prof. Yuzhang Shang"
-        highlights:
-          - "Leading the development of a multi-agent system for autonomously authoring and optimizing multi-GPU communication CUDA kernels, evaluated on multi-node H100 clusters."
+        highlights: []
 
       - company: EcoAI Lab, Purdue University
         position: Research Assistant
@@ -53,6 +52,10 @@ cv:
         start_date: 2026-03
         end_date: ""
         summary: "Advisor: Prof. Haoran You"
-        highlights:
-          - "Co-authored a paper on efficient inference for diffusion large language models (dLLMs), under review at NeurIPS 2026."
-          - "Designed and evaluated inference acceleration methods for dLLMs through large-scale experiments on multi-GPU (8×H100) infrastructure."
+        highlights: []
+
+    Honors and Awards:
+      - title: "First Prize (Provincial Level), Chinese Physics Olympiad (CPHO)"
+        date: ""
+        awarder: ""
+        summary: "全国高中生物理竞赛省级一等奖"
