@@ -16,7 +16,7 @@ cv:
     street: ""
     city: West Lafayette
     region: Indiana
-    postalCode: ""
+    postalCode: "47906"
     countryCode: US
 
   sections:
@@ -24,28 +24,17 @@ cv:
       - institution: Purdue University
         location: West Lafayette, IN
         url: https://www.purdue.edu
-        area: ""
-        studyType: B.S. Computer Science
+        area: "Expected graduation: December 2027 · GPA: 4.0 / 4.0"
+        studyType: B.S. in Computer Science
         start_date: 2025-08
         end_date: ""
-        score: "GPA: 4.0 / 4.0 · Dean's List & Semester Honors"
-        courses: ""
-        highlights: []
-
-      - institution: East China University of Science and Technology
-        location: ""
-        area: ""
-        studyType: B.S. Robotics Engineering
-        date_label: Attended
-        start_date: ""
-        end_date: ""
-        score: ""
-        courses: ""
-        highlights: []
+        highlights:
+          - "**Graduate-level coursework:** Artificial Intelligence, ML System Co-Design, Compilers"
+          - "**Undergraduate coursework:** Data Structures, Analysis of Algorithms, Computer Architecture, Game Theory, NLP, Discrete Mathematics, Complex Analysis"
 
     Experience:
       - company: Purdue University, School of ECE
-        position: "Teaching Assistant — ECE 57000: Artificial Intelligence (graduate-level)"
+        position: "Teaching Assistant — ECE 57000: Artificial Intelligence (graduate level)"
         location: West Lafayette, IN
         url: https://www.davidinouye.com/course/ece57000-fall-2026/
         start_date: 2026-08
@@ -53,39 +42,57 @@ cv:
         summary: "Graduate-level AI course taught by Prof. David I. Inouye."
         highlights: []
 
-      - company: EcoAI Lab
-        position: Research Assistant
+      - company: EXceL Lab
+        position: Research Intern
         location: ""
+        start_date: 2026-05
+        end_date: ""
+        summary: "Advisor: Prof. Yuzhang Shang"
+        highlights:
+          - "Leading the development of a multi-agent system for autonomously authoring and optimizing multi-GPU communication CUDA kernels, evaluated on multi-node H100 clusters."
+
+      - company: EcoAI Lab, Purdue University
+        position: Research Assistant
+        location: West Lafayette, IN
         start_date: 2026-03
         end_date: ""
-        summary: "Advised by Prof. Haoran You."
-        highlights: []
+        summary: "Advisor: Prof. Haoran You"
+        highlights:
+          - "Co-authored a paper on efficient inference for diffusion large language models (dLLMs), under review at NeurIPS 2026."
+          - "Designed and evaluated inference acceleration methods for dLLMs through large-scale experiments on multi-GPU (8×H100) infrastructure."
 
-      - company: PurSec Lab, Purdue University
-        position: Research Assistant
-        location: ""
+    Projects:
+      - name: Diffusion LLM Serving Framework
+        summary: "To be open-sourced · Jun 2026 – Present"
+        highlights:
+          - "Contributing model support to a serving framework for diffusion language models (release in preparation), integrating new dLLM architectures into the inference stack with parallel-decoding and KV-cache-style optimizations."
+
+      - name: Trustworthy Machine Learning
+        summary: "Purdue VIP Program · Jan 2026 – May 2026 · Advisor: Prof. Zahra Ghodsi"
+        highlights:
+          - "Deployed and benchmarked *Landseer* on Purdue's Gilbreth HPC cluster, enabling GPU-accelerated evaluation of privacy-preserving ML inference and backdoor defenses for fine-tuned models."
+
+      - name: Adversarial Robustness of Visual In-Context Learning
         url: https://pursec.cs.purdue.edu/
-        start_date: 2025-08
-        end_date: 2025-12
-        summary: ""
-        highlights: []
+        summary: "PurSec Lab · Aug 2025 – Dec 2025 · Advisor: Prof. Antonio Bianchi"
+        highlights:
+          - "Built an evaluation pipeline for Visual In-Context Learning robustness under adversarial perturbations, measuring cross-task hijacking behavior across vision tasks."
+          - "Developed task-level hijacking attacks that redirect model inference between vision tasks, achieving 81.7% task-switching success and 90% success on a real-world labeling pipeline."
 
-      - company: Claude Builder Club @ Purdue
-        position: Member
-        location: ""
-        url: https://www.linkedin.com/company/claude-builder-club-purdue
-        start_date: 2025-08
-        end_date: ""
-        summary: "AI Developer Tooling with Claude."
-        highlights: []
+    Skills:
+      - name: Programming Languages
+        keywords:
+          - Python
+          - Java
+          - C
+          - C++
+          - Bash
+          - MATLAB
 
-    Awards:
-      - title: "Dean's List & Semester Honors"
-        date: ""
-        awarder: Purdue University
-        summary: ""
-
-      - title: "First Prize, Chinese Physics Olympiad (CPHO), Provincial Level"
-        date: ""
-        awarder: ""
-        summary: ""
+      - name: Frameworks & Tools
+        keywords:
+          - PyTorch
+          - Hugging Face Transformers
+          - vLLM
+          - Slurm
+          - Git

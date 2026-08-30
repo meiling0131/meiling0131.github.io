@@ -6,7 +6,7 @@ nav: true
 nav_order: 5
 cv_pdf: /assets/pdf/Meiling_Resume.pdf # you can also use external links here
 cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+description: Undergraduate in Computer Science at Purdue, working on ML systems and efficient LLM inference. Download the PDF with the icon on the right.
 toc:
   sidebar: left
 ---
