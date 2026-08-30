@@ -120,6 +120,13 @@ ul.task-list input[type="checkbox"] {
 .date-column {
   width: 75px;
   transform: translateX(-15px) translateY(-5px);
+
+  // Allow long labels (e.g. "Expected graduation: December 2027") to wrap
+  // instead of overflowing into the entry text. Short dates are unaffected.
+  .badge {
+    white-space: normal;
+    line-height: 1.3;
+  }
 }
 
 // Projects

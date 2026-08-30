@@ -28,8 +28,6 @@ My research goal is to build **efficient and interpretable machine learning syst
 - **Machine Learning Systems**
 - **Model Interpretability**
 
-I'm currently a Teaching Assistant for **ECE 57000: Artificial Intelligence**, a graduate-level course at Purdue — see my [teaching](/teaching/) page.
-
 I'm part of the Claude Builder Club at Purdue.
 
 Feel free to reach out if you'd like to chat about ML systems, LLM inference, or research opportunities — email is the fastest way.

@@ -24,13 +24,9 @@ cv:
       - institution: Purdue University
         location: West Lafayette, IN
         url: https://www.purdue.edu
-        area: "Expected graduation: December 2027 · GPA: 4.0 / 4.0"
+        area: "GPA: 4.0 / 4.0 · Dean's List & Semester Honors"
         studyType: B.S. in Computer Science
-        start_date: 2025-08
-        end_date: ""
-        highlights:
-          - "**Graduate-level coursework:** Artificial Intelligence, ML System Co-Design, Compilers"
-          - "**Undergraduate coursework:** Data Structures, Analysis of Algorithms, Computer Architecture, Game Theory, NLP, Discrete Mathematics, Complex Analysis"
+        date_label: "Expected graduation: December 2027"
 
     Experience:
       - company: Purdue University, School of ECE
@@ -60,39 +56,3 @@ cv:
         highlights:
           - "Co-authored a paper on efficient inference for diffusion large language models (dLLMs), under review at NeurIPS 2026."
           - "Designed and evaluated inference acceleration methods for dLLMs through large-scale experiments on multi-GPU (8×H100) infrastructure."
-
-    Projects:
-      - name: Diffusion LLM Serving Framework
-        summary: "To be open-sourced · Jun 2026 – Present"
-        highlights:
-          - "Contributing model support to a serving framework for diffusion language models (release in preparation), integrating new dLLM architectures into the inference stack with parallel-decoding and KV-cache-style optimizations."
-
-      - name: Trustworthy Machine Learning
-        summary: "Purdue VIP Program · Jan 2026 – May 2026 · Advisor: Prof. Zahra Ghodsi"
-        highlights:
-          - "Deployed and benchmarked *Landseer* on Purdue's Gilbreth HPC cluster, enabling GPU-accelerated evaluation of privacy-preserving ML inference and backdoor defenses for fine-tuned models."
-
-      - name: Adversarial Robustness of Visual In-Context Learning
-        url: https://pursec.cs.purdue.edu/
-        summary: "PurSec Lab · Aug 2025 – Dec 2025 · Advisor: Prof. Antonio Bianchi"
-        highlights:
-          - "Built an evaluation pipeline for Visual In-Context Learning robustness under adversarial perturbations, measuring cross-task hijacking behavior across vision tasks."
-          - "Developed task-level hijacking attacks that redirect model inference between vision tasks, achieving 81.7% task-switching success and 90% success on a real-world labeling pipeline."
-
-    Skills:
-      - name: Programming Languages
-        keywords:
-          - Python
-          - Java
-          - C
-          - C++
-          - Bash
-          - MATLAB
-
-      - name: Frameworks & Tools
-        keywords:
-          - PyTorch
-          - Hugging Face Transformers
-          - vLLM
-          - Slurm
-          - Git
