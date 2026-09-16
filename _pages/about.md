@@ -10,7 +10,7 @@ profile:
   more_info: >
     <p>West Lafayette, IN</p>
     <p>wang7395@purdue.edu</p>
-selected_papers: false
+selected_papers: true
 social: true
 announcements:
   enabled: false

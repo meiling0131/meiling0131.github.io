@@ -4,3 +4,17 @@
 % Publications will be added here when ready.
 % Format: standard BibTeX entries with optional fields:
 %   abbr, abstract, html, pdf, code, preview, selected, bibtex_show
+
+@article{wei2026earlybird,
+  abbr={arXiv},
+  title={Early-Bird Decoding: Accelerating Diffusion LLMs with Learnable Block Sizes and Parallel Sampling},
+  author={Wei, Lixuan and Zhou, Wei and Wu, Jianwen and Shen, Yipeng and Wang, Meiling and You, Haoran},
+  journal={arXiv preprint arXiv:2609.16450},
+  year={2026},
+  month={sep},
+  arxiv={2609.16450},
+  pdf={early-bird-decoding.pdf},
+  abstract={Diffusion large language models (dLLMs) offer a promising parallel decoding paradigm as an alternative to autoregressive generation through iterative unmasking. However, dLLMs typically require many steps before token confidence reaches the decoding threshold, resulting in inefficient inference even with block-wise KV caching. To accelerate dLLM inference, we for the first time propose an "early-bird (EB)" decoding framework, motivated by the observation that tokens with similarly low entropy tend to cluster and can be jointly decoded earlier, before reaching the confidence threshold. In particular, our EB-Decode framework integrates two key enablers: (1) a learnable network that adaptively groups tokens with similar uncertainty into variable-length blocks, rather than relying on fixed block sizes; (2) a position-aware sampler that learns to unmask tokens in parallel using fewer decoding steps within predicted variable-length blocks. Both components are developed without modifying pretrained dLLM weights and can therefore be directly deployed as plug-ins during serving, with negligible training and inference overhead. Extensive experiments across three models and four benchmarks consistently validate our observation and the effectiveness of EB-Decode, achieving 3.53--18.76x higher throughput than the vanilla decoding method and up to 1.58x higher throughput over the strongest baseline, Fast-dLLM, with comparable accuracy.},
+  selected={true},
+  bibtex_show={true}
+}
