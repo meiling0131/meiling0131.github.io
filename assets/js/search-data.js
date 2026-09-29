@@ -37,10 +37,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-started-undergraduate-research-on-ml-systems-at-purdue",
-          title: 'Started undergraduate research on ML systems at Purdue.',
-          description: "",
-          section: "News",},{id: "news-serving-as-a-teaching-assistant-for-ece-57000-artificial-intelligence-a-graduate-level-course-at-purdue-in-fall-2026",
+        },{id: "news-serving-as-a-teaching-assistant-for-ece-57000-artificial-intelligence-a-graduate-level-course-at-purdue-in-fall-2026",
           title: 'Serving as a Teaching Assistant for ECE 57000: Artificial Intelligence, a graduate-level course...',
           description: "",
           section: "News",},{id: "news-fluxserve-a-serving-engine-for-diffusion-language-models-i-contribute-to-is-now-open-source",
