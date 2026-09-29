@@ -2,7 +2,6 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Open-source systems work on efficient inference for diffusion language models.
 nav: true
 nav_order: 4
 ---
