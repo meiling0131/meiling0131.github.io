@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "Open-source systems work on efficient inference for diffusion language models.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
