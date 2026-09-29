@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "Open-source systems work on efficient inference for diffusion language models.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
         },{id: "nav-cv",
           title: "CV",
           description: "Undergraduate in Computer Science at Purdue, working on ML systems and efficient LLM inference. Download the PDF with the icon on the right.",
@@ -36,7 +43,15 @@ ninja.data = [{
           section: "News",},{id: "news-serving-as-a-teaching-assistant-for-ece-57000-artificial-intelligence-a-graduate-level-course-at-purdue-in-fall-2026",
           title: 'Serving as a Teaching Assistant for ECE 57000: Artificial Intelligence, a graduate-level course...',
           description: "",
-          section: "News",},{id: "teachings-ece-57000-artificial-intelligence",
+          section: "News",},{id: "news-fluxserve-a-serving-engine-for-diffusion-language-models-i-contribute-to-is-now-open-source",
+          title: 'FluxServe, a serving engine for diffusion language models I contribute to, is now...',
+          description: "",
+          section: "News",},{id: "projects-fluxserve",
+          title: 'FluxServe',
+          description: "A lightweight, high-performance serving engine for diffusion language models.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/fluxserve/";
+            },},{id: "teachings-ece-57000-artificial-intelligence",
           title: 'ECE 57000: Artificial Intelligence',
           description: "Graduate-level introduction to artificial intelligence at Purdue. I serve as a Teaching Assistant for the Fall 2026 offering.",
           section: "Teachings",handler: () => {
