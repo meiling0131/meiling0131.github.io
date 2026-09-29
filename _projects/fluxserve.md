@@ -26,4 +26,4 @@ iterative diffusion decoding. FluxServe targets that gap directly.
 ## My contributions
 
 I integrate new dLLM architectures into the serving framework, contributing model support and
-inference-stack integration for parallel decoding and caching optimizations.
+runtime.
