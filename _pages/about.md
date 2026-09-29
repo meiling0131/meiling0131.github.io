@@ -13,13 +13,11 @@ profile:
 selected_papers: true
 social: true
 announcements:
-  enabled: false
-latest_posts:
-  enabled: false
-news:
   enabled: true
   scrollable: true
   limit: 5
+latest_posts:
+  enabled: false
 ---
 Hi! I'm Meiling, an undergraduate at [Purdue University](https://www.purdue.edu) majoring in Computer Science, expected to graduate in **December 2027**.
 
