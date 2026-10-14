@@ -134,3 +134,26 @@ blockquote {
     }
   }
 }
+
+/*******************************************************************************
+ * Fonts: Inter for body text, Source Serif 4 for headings
+ ******************************************************************************/
+
+body {
+  font-family: v.$font-family-sans;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+.navbar-brand {
+  font-family: v.$font-family-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}

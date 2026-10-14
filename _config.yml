@@ -6,8 +6,7 @@ title: Meiling Wang
 first_name: Meiling
 middle_name:
 last_name: Wang
-contact_note: >
-  Feel free to reach out via email — that's the fastest way to get a hold of me.
+contact_note:
 description: >
   Personal homepage of Meiling Wang — CS undergraduate at Purdue,
   working on ML systems and efficient LLM inference.
@@ -55,7 +54,7 @@ external_services:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+search_enabled: false
 socials_in_search: true
 posts_in_search: false
 bib_search: true
@@ -70,7 +69,7 @@ max_width: 930px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+og_image: https://meiling0131.github.io/assets/img/prof_pic.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -325,7 +324,7 @@ enable_darkmode: true # enables switching between light/dark modes
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
 enable_project_categories: false # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
-enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
+enable_progressbar: false # enables a horizontal progress bar linked to the vertical scroll position
 enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
 
 # -----------------------------------------------------------------------------
@@ -377,7 +376,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:
