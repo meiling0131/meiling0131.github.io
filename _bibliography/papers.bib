@@ -5,6 +5,20 @@
 % Format: standard BibTeX entries with optional fields:
 %   abbr, abstract, html, pdf, code, preview, selected, bibtex_show
 
+@article{wu2026pocoattn,
+  abbr={arXiv},
+  title={PoCoAttn: Position-Content Collaborative Sparse Attention for Fast and High-Fidelity Video Generation},
+  author={Wu, Jianwen and Wang, Meiling and Zhou, Junkang and Shen, Yipeng and You, Haoran},
+  journal={arXiv preprint arXiv:2611.20307},
+  year={2026},
+  month={nov},
+  arxiv={2611.20307},
+  pdf={https://arxiv.org/pdf/2611.20307},
+  abstract={Video diffusion transformers rely on 3D full attention over tens of thousands of spatiotemporal tokens, and its quadratic cost dominates inference latency. Sparse attention reduces this cost, but existing methods face a dilemma: static methods apply predefined masks and cannot capture input-dependent attention, whereas dynamic methods reconstruct the sparse mask repeatedly, paying online to rediscover positional structure that is largely stable across inputs. To this end, we propose PoCoAttn, a training-free sparse attention framework that separates input-stable from input-dependent attention and resolves the former offline and the latter online. PoCoAttn features: (1) A relative-offset analysis of 3D query-key pairs, which shows that video attention decomposes into an input-stable positional prior that carries most of the attention mass and a small content-dependent residual. (2) A position-content collaborative sparse attention mechanism, which retrieves positional keys from offline-calibrated tables, selects content keys online with a head-adaptive ratio between the two sources, and compensates for the discarded keys to approximate full attention. (3) A step-adaptive budget allocation algorithm, which models how early-step sparse attention errors are amplified along the denoising trajectory and derives the optimal sparsity budget per step. Extensive experiments across four video diffusion models and three tasks show that PoCoAttn consistently achieves a better speed-fidelity Pareto frontier than state-of-the-art (SOTA) methods, improving PSNR by 1.9 to 5.0 dB over baselines and delivering up to 4.1x attention and 2.0x denoising speedups over dense FlashAttention-3 attention.},
+  selected={true},
+  bibtex_show={true}
+}
+
 @article{wei2026earlybird,
   abbr={arXiv},
   title={Early-Bird Decoding: Accelerating Diffusion LLMs with Learnable Block Sizes and Parallel Sampling},
@@ -13,7 +27,7 @@
   year={2026},
   month={sep},
   arxiv={2609.16450},
-  pdf={early-bird-decoding.pdf},
+  pdf={https://arxiv.org/pdf/2609.16450},
   abstract={Diffusion large language models (dLLMs) offer a promising parallel decoding paradigm as an alternative to autoregressive generation through iterative unmasking. However, dLLMs typically require many steps before token confidence reaches the decoding threshold, resulting in inefficient inference even with block-wise KV caching. To accelerate dLLM inference, we for the first time propose an "early-bird (EB)" decoding framework, motivated by the observation that tokens with similarly low entropy tend to cluster and can be jointly decoded earlier, before reaching the confidence threshold. In particular, our EB-Decode framework integrates two key enablers: (1) a learnable network that adaptively groups tokens with similar uncertainty into variable-length blocks, rather than relying on fixed block sizes; (2) a position-aware sampler that learns to unmask tokens in parallel using fewer decoding steps within predicted variable-length blocks. Both components are developed without modifying pretrained dLLM weights and can therefore be directly deployed as plug-ins during serving, with negligible training and inference overhead. Extensive experiments across three models and four benchmarks consistently validate our observation and the effectiveness of EB-Decode, achieving 3.53--18.76x higher throughput than the vanilla decoding method and up to 1.58x higher throughput over the strongest baseline, Fast-dLLM, with comparable accuracy.},
   selected={true},
   bibtex_show={true}
